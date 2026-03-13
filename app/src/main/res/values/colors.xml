@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary_color">#2c3e50</color>
+    <color name="primary_dark">#1a252f</color>
+
+    <!-- Secondary Colors -->
+    <color name="secondary_color">#e74c3c</color>
+    <color name="secondary_dark">#c0392b</color>
+
+    <!-- Accent -->
+    <color name="accent_color">#f39c12</color>
+
+    <!-- Gradient -->
+    <color name="gradient_start">#667eea</color>
+    <color name="gradient_end">#764ba2</color>
+
+    <!-- Backgrounds -->
+    <color name="background_light">#f8f9fa</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Text -->
+    <color name="text_primary">#333333</color>
+    <color name="text_secondary">#777777</color>
+</resources>
