@@ -9,14 +9,13 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="🖼️ Art Gallery"
+        android:text="✏️ Charcoal Portraits"
         android:textSize="28sp"
         android:textStyle="bold"
         android:textColor="@color/primary_color"
         android:gravity="center"
         android:padding="20dp"
         android:background="@color/white" />
-
     <!-- Grid of Artworks -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewGallery"

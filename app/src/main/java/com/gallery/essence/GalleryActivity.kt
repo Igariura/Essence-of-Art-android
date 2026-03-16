@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.gallery.essence.adapters.ArtworkAdapter
 import com.gallery.essence.models.ArtworkData
+import android.content.Intent
 
 class GalleryActivity : AppCompatActivity() {
 
@@ -22,8 +23,12 @@ class GalleryActivity : AppCompatActivity() {
 
         // Setup adapter
         val adapter = ArtworkAdapter(artworks) { artwork ->
-            // TODO: Open detail screen when artwork clicked
+            // Open detail screen
+            val intent = Intent(this, ArtworkDetailActivity::class.java)
+            intent.putExtra("artwork", artwork)
+            startActivity(intent)
         }
+
 
         recyclerView.adapter = adapter
     }

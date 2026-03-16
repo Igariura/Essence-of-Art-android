@@ -7,7 +7,7 @@ import kotlinx.parcelize.Parcelize
 data class Artwork(
     val id: Int,
     val title: String,
-    val category: String,
+    val category: String,  // Keep this field but we'll use "Portrait" for all
     val imageUrl: String,
     val description: String,
     val artist: String = "Essence of Art"
@@ -19,44 +19,72 @@ object ArtworkData {
             Artwork(
                 id = 1,
                 title = "Kobe Bryant",
-                category = "Portraits",
-                imageUrl = "https://via.placeholder.com/400x300/667eea/ffffff?text=Kobe+Bryant",
-                description = "A stunning portrait capturing the legendary Kobe Bryant's intense focus and determination on the court. This piece embodies the spirit of greatness and perseverance."
+                category = "Charcoal Portrait",
+                imageUrl = "https://via.placeholder.com/400x600/2c2c2c/ffffff?text=Kobe+Bryant",
+                description = "A striking charcoal portrait capturing the intensity and determination in Kobe Bryant's eyes. Every stroke represents his legendary Mamba Mentality and unwavering focus."
             ),
             Artwork(
                 id = 2,
-                title = "Sunset Over Mountains",
-                category = "Landscapes",
-                imageUrl = "https://via.placeholder.com/400x300/e74c3c/ffffff?text=Sunset",
-                description = "Beautiful sunset painting with vibrant colors cascading over majestic mountain peaks. The warm hues create a peaceful and contemplative atmosphere."
+                title = "Nelson Mandela",
+                category = "Charcoal Portrait",
+                imageUrl = "https://via.placeholder.com/400x600/333333/ffffff?text=Nelson+Mandela",
+                description = "Wisdom etched in charcoal. This portrait honors the father of South Africa, capturing the strength, resilience, and hope that defined his incredible journey."
             ),
             Artwork(
                 id = 3,
-                title = "Abstract Dreams",
-                category = "Abstract",
-                imageUrl = "https://via.placeholder.com/400x300/f39c12/ffffff?text=Abstract",
-                description = "Modern abstract piece with bold colors and dynamic shapes that evoke emotion and invite personal interpretation. A celebration of creative freedom."
+                title = "Frida Kahlo",
+                category = "Charcoal Portrait",
+                imageUrl = "https://via.placeholder.com/400x600/2a2a2a/ffffff?text=Frida+Kahlo",
+                description = "Bold strokes bring Frida Kahlo's iconic gaze to life. Her strength, pain, and artistic genius captured in monochromatic beauty."
             ),
             Artwork(
                 id = 4,
-                title = "City Lights",
-                category = "Urban",
-                imageUrl = "https://via.placeholder.com/400x300/764ba2/ffffff?text=City",
-                description = "Captivating urban nightscape showcasing the vibrant energy of city life. The interplay of light and shadow brings the metropolitan pulse to life."
+                title = "Muhammad Ali",
+                category = "Charcoal Portrait",
+                imageUrl = "https://via.placeholder.com/400x600/1a1a1a/ffffff?text=Muhammad+Ali",
+                description = "The Greatest. Charcoal captures the fire in his eyes and the confidence in his stance. A champion both in and out of the ring."
             ),
             Artwork(
                 id = 5,
-                title = "Ocean Waves",
-                category = "Nature",
-                imageUrl = "https://via.placeholder.com/400x300/2c3e50/ffffff?text=Ocean",
-                description = "Serene ocean scene with powerful waves crashing against the shore. The rhythmic motion captures nature's raw beauty and timeless power."
+                title = "Bob Marley",
+                category = "Charcoal Portrait",
+                imageUrl = "https://via.placeholder.com/400x600/2e2e2e/ffffff?text=Bob+Marley",
+                description = "One Love, captured in charcoal. Bob Marley's spirit and musical legacy shine through in this deeply expressive portrait."
             ),
             Artwork(
                 id = 6,
-                title = "Forest Path",
-                category = "Nature",
-                imageUrl = "https://via.placeholder.com/400x300/27ae60/ffffff?text=Forest",
-                description = "Peaceful forest trail leading through lush greenery and towering trees. An invitation to explore the quiet beauty of the natural world."
+                title = "Tupac Shakur",
+                category = "Charcoal Portrait",
+                imageUrl = "https://via.placeholder.com/400x600/252525/ffffff?text=Tupac+Shakur",
+                description = "A poetic soul immortalized in graphite. This portrait reflects Tupac's complexity - artist, activist, and icon of a generation."
+            ),
+            Artwork(
+                id = 7,
+                title = "Maya Angelou",
+                category = "Charcoal Portrait",
+                imageUrl = "https://via.placeholder.com/400x600/303030/ffffff?text=Maya+Angelou",
+                description = "Grace and wisdom flow through every charcoal line. Maya Angelou's powerful presence captured in monochrome elegance."
+            ),
+            Artwork(
+                id = 8,
+                title = "Martin Luther King Jr.",
+                category = "Charcoal Portrait",
+                imageUrl = "https://via.placeholder.com/400x600/1f1f1f/ffffff?text=MLK+Jr",
+                description = "I Have a Dream. This charcoal portrait honors a man whose vision and courage changed the world. Every shadow tells a story of hope."
+            ),
+            Artwork(
+                id = 9,
+                title = "Albert Einstein",
+                category = "Charcoal Portrait",
+                imageUrl = "https://via.placeholder.com/400x600/2b2b2b/ffffff?text=Albert+Einstein",
+                description = "Genius captured in charcoal. Einstein's contemplative gaze and wild hair brought to life through masterful shading and detail."
+            ),
+            Artwork(
+                id = 10,
+                title = "Beyoncé",
+                category = "Charcoal Portrait",
+                imageUrl = "https://via.placeholder.com/400x600/282828/ffffff?text=Beyonce",
+                description = "Queen Bey immortalized in charcoal. Strength, beauty, and artistry captured in every carefully placed stroke."
             )
         )
     }

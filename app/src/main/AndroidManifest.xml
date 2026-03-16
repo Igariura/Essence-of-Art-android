@@ -29,6 +29,12 @@
         <activity
             android:name=".GalleryActivity"
             android:exported="false" />
+
+        <!-- Artwork Detail Activity -->
+        <activity
+            android:name=".ArtworkDetailActivity"
+            android:exported="false"
+            android:parentActivityName=".GalleryActivity" />
     </application>
 
 </manifest>

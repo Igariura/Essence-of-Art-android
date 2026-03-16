@@ -18,7 +18,7 @@ class ArtworkAdapter(
     class ArtworkViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val artworkImage: ImageView = view.findViewById(R.id.artworkImage)
         val artworkTitle: TextView = view.findViewById(R.id.artworkTitle)
-        val artworkCategory: TextView = view.findViewById(R.id.artworkCategory)
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArtworkViewHolder {
@@ -31,19 +31,20 @@ class ArtworkAdapter(
         val artwork = artworks[position]
 
         holder.artworkTitle.text = artwork.title
-        holder.artworkCategory.text = artwork.category
+        // REMOVE: holder.artworkCategory.text = artwork.category
 
-        // Load image with Glide
         Glide.with(holder.itemView.context)
             .load(artwork.imageUrl)
             .placeholder(R.color.primary_color)
             .into(holder.artworkImage)
 
-        // Click listener
         holder.itemView.setOnClickListener {
             onItemClick(artwork)
         }
     }
+
+        // Click listener
+
 
     override fun getItemCount() = artworks.size
 }
