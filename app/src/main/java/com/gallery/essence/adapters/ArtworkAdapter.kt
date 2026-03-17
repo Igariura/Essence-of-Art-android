@@ -34,7 +34,7 @@ class ArtworkAdapter(
         // REMOVE: holder.artworkCategory.text = artwork.category
 
         Glide.with(holder.itemView.context)
-            .load(artwork.imageUrl)
+            .load(artwork.imageResource)
             .placeholder(R.color.primary_color)
             .into(holder.artworkImage)
 
